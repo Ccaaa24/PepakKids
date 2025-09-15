@@ -34,7 +34,7 @@ class _RegisterPageState extends State<RegisterPage> {
       }
 
       // 2. Insert ke tabel users
-      await supabase.from("user").insert({
+      await supabase.from("users").insert({
         'user_id': user.id,
         'nama': name,
         'gender': _gender, // ambil dari dropdown
